@@ -2,15 +2,7 @@ var mainModule = (function(){
 
 	var regVCart = /{"cart-count":/g;
 		console.log(decodeURIComponent(document.cookie));
-	//var access_regV = /access:/g;
 
-		//alert(typeof(decodeURIComponent(document.cookie)));
-	//var access_for_wrighting_cookie = decodeURIComponent(document.cookie).search("access");
-
-	//if(access_for_wrighting_cookie){
-	//	alert(access_for_wrighting_cookie);
-
-	//}
 
 
 
@@ -24,8 +16,6 @@ var mainModule = (function(){
 			cookie+=encodeURIComponent(" expires: ")+time.toGMTString()+encodeURIComponent(";");
 			cookie+=encodeURIComponent("path="+document.location.hostname+";");
 			document.cookie=cookie;
-			//Object.defineProperty(document, 'cookie', { get: function() {return this.value;}});
-			//Object.defineProperty(document, 'cookie', {configurable: true, enumerable: true, writable: true, value: cookie});
 
 		}
 
@@ -200,17 +190,11 @@ var gift_buttons_click = function() {
 
 		else {
 			json_obj_cookie['cart-count'][current_id]++;
-			alert(json_obj_cookie['cart-count'][current_id]);
 		}
 
-		alert(JSON.stringify(json_obj_cookie));
 		gift_buttons_boolean=true;
 
-		var current_cookie = encodeURIComponent(decodeURIComponent(document.cookie).replace(/{.*}/g, JSON.stringify(json_obj_cookie)));
-		alert(decodeURIComponent(document.cookie).replace(/{.*}/g, JSON.stringify(json_obj_cookie)));
-
-			Object.defineProperty(document, 'cookie', {value: current_cookie, enumerable: true, configurable: true, writable: true});
-			console.log("defineProperty");
+		document.cookie = encodeURIComponent(decodeURIComponent(document.cookie).replace(/{.*}/g, JSON.stringify(json_obj_cookie)));
 
 		console.log(decodeURIComponent(document.cookie));
 
