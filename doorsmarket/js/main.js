@@ -164,6 +164,10 @@ var mainModule = (function(){
 		cart_count.textContent = 0;
 		cart_amount.textContent = "На сумму 0";
 
+		if(document.location.href.match(/\w+\.html/g)=="cart.html"){
+			document.location = document.location;
+		}
+
 		setTimeout(function() {clear_cart_click=false}, 10);
 	}
 
