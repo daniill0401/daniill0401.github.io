@@ -41,7 +41,7 @@ var mainModule = (function(){
 								xmlDoc = tempRequest.responseXML.documentElement;
 								document.xmlDoc = xmlDoc;
 
-								// вызываю зависющие от этого параметра функции
+								// вызываю зависящие от этого параметра функции
 
 
 								cart_amount_func();
