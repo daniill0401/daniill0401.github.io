@@ -1,0 +1,149 @@
+.gift_layout {
+	&_wrapper {
+		min-width: 800px;
+		max-width: 800px;
+		margin: 30px auto;
+	}
+
+	&_title {
+		padding-left: 10px;
+		font-weight: 100;
+		line-height: 50px;
+		font-family: Roboto-regular;
+		border-bottom: 1px solid rgba(166,0,0,.8);
+		margin-bottom: 20px;
+		color: rgba(0,0,0,.8);
+	}
+
+	&_img {
+		margin-left: 30px;
+	}
+
+	&_img, &_description {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	&_description {
+		float:right;
+		height: 400px;
+		width: 550px;
+		font-family: Roboto;
+		color: rgba(0,0,0,.9);
+
+		table {
+			border-collapse: separate;
+			border-spacing: 1px;
+			margin-top: 15px;
+
+			td {
+				border: 1px solid white;
+				border-radius: 5px;
+			}
+		}
+
+		&-tr {
+			height: 45px;
+			width: 100%;
+		}
+
+		&-tr:nth-child(even) {
+				td {	
+					background: rgba(0,0,0,.18);
+				}
+			}
+
+		&-tr:nth-child(odd) {
+			td {
+				background: rgba(0,0,0,.1);
+			}
+		}
+
+		&-td {
+			width: 275px;
+			padding-left: 20px;
+		}
+
+		&_price
+				{
+
+				color: rgba(0,0,0,.7);
+				margin-top: 50px;
+
+			&-title {
+			width: 100%;
+			border-top: 1px solid rgba(166,0,0,.4);
+			border-bottom: 1px solid rgba(166,0,0,.4);
+			padding: 20px 20px 20px 0;
+			text-align: right;
+			display: inline-block;
+			}
+		}
+
+		&_button {
+			margin-top: 30px;
+			margin-right: 10px;
+			float: right;
+			width: 200px;
+			height: 40px;
+			cursor: pointer;
+			font-family: Roboto;
+			color: rgba(0,0,0,.9);
+		}
+
+	}
+
+	&_right_round, &_left_round {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background: rgba(0,0,0,.3);
+		position: absolute;
+		top: 325px;
+		cursor: pointer;
+	}
+
+	&_right_round:hover, &_left_round:hover{
+		background: rgba(166,0,0,.6);
+	}
+
+	&_right_triangle, &_left_triangle{
+
+	}
+
+	&_right {
+		&_round {
+			right: 150px;
+		}
+
+		&_triangle {
+			width: 25px;
+			height: 25px;
+			border-right: 2px solid rgba(255,255,255,.7);
+			border-bottom: 2px solid rgba(255,255,255,.7);
+			border-bottom-right-radius: 3px;
+			margin-top: 24px;
+			margin-left: 24px;
+			transform-origin: 0 100%;
+			transform: rotate(-45deg);
+		}
+	}
+
+	&_left {
+		&_round {
+			left: 150px;
+		}
+
+		&_triangle {
+			width: 25px;
+			height: 25px;
+			border-left: 2px solid rgba(255,255,255,.7);
+			border-bottom: 2px solid rgba(255,255,255,.7);
+			border-bottom-left-radius: 3px;
+			margin-top: 6px;
+			margin-left: 17px;
+			transform-origin: 0 100%;
+			transform: rotate(45deg);
+		}
+	}
+}

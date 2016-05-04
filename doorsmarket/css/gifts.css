@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.wrapper_gifts {
+  min-width: 900px;
+  max-width: 900px;
+  margin: 50px auto;
+  font-family: Roboto; }
+  .wrapper_gifts_item_wrap {
+    position: relative;
+    width: 200px;
+    height: 320px;
+    padding: 10px;
+    padding-top: 20px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform ease-in-out .3s; }
+  .wrapper_gifts_item_desc {
+    position: absolute;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    left: 50%;
+    margin-top: 0;
+    margin-left: -65px;
+    padding-top: 15px; }
+  .wrapper_gifts_item_desc, .wrapper_gifts_item_price {
+    font-size: 15px; }
+  .wrapper_gifts_item_price {
+    position: absolute;
+    width: 100%;
+    bottom: 10px; }
+  .wrapper_gifts_item_button {
+    position: absolute;
+    width: 140px;
+    height: 30px;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -70px;
+    opacity: 0;
+    z-index: 11;
+    transition: bottom .3s, margin .0s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-family: Roboto;
+    font-size: 14px;
+    background: linear-gradient(to top, rgba(69, 69, 69, 0.7), rgba(194, 194, 194, 0.7), rgba(69, 69, 69, 0.7)); }
+  .wrapper_gifts_item_wrap::before {
+    z-index: 10;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+    transition: all .35s;
+    opacity: 0; }
+  .wrapper_gifts_item_wrap::after {
+    z-index: 11;
+    position: absolute;
+    content: "Подробнее..";
+    top: 160px;
+    left: 0;
+    color: transparent;
+    font-family: Roboto-regular;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: all .35s; }
+  .wrapper_gifts_item_wrap:hover:after {
+    top: 50px;
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.9); }
+  .wrapper_gifts_item_wrap:hover::before {
+    height: 104%;
+    opacity: 1; }
+  .wrapper_gifts_item_wrap:hover button {
+    opacity: 1;
+    bottom: 35px; }
+  .wrapper_gifts_item_wrap:hover button:active {
+    margin: 0 0 -2px -70px; }
+  .wrapper_gifts_item_wrap:hover button:hover {
+    background: linear-gradient(to top, rgba(40, 40, 40, 0.7), rgba(205, 205, 205, 0.7), rgba(40, 40, 40, 0.7)); }
+  .wrapper_gifts_item_for_p p:first-child {
+    transition: all .25s; }
+  .wrapper_gifts_item_wrap:hover .wrapper_gifts_item_for_p p:first-child {
+    z-index: 11;
+    overflow: inherit;
+    margin-top: -100px;
+    color: white; }

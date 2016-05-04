@@ -1,0 +1,9 @@
+extends gift_layout
+block gift_title
+	| Соло 1ДГ1 шпон, Владимирская фабрика
+block add_image
+	+add_image(19)
+block table_values
+	- var cellsTitles = ["Производитель", "Модель", "Материал", "Наличие"]
+	- var cellsValues = ["Владимирская фабрика", "1ДГ1", "Шпон", "На складе"]
+	+gift_cells(cellsTitles, cellsValues, 4000)

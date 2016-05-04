@@ -1,0 +1,42 @@
+*, *:after, *:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none; }
+
+a:focus {
+  outline: none; }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"), url(fonts/Roboto.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Roboto-regular';
+  font-style: normal;
+  font-weight: 100;
+  src: url(fonts/roboto-regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Geometria';
+  font-style: normal;
+  font-weight: 100;
+  src: url(fonts/Geometria.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'Geometria-light';
+  font-style: normal;
+  font-weight: 100;
+  src: url(fonts/Geometria-Light.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'PtSansNarrow';
+  font-style: normal;
+  font-weight: 100;
+  src: url(fonts/pt-sans-narrow.ttf) format("truetype"), url(fonts/pt-sans-narrow.woff) format("woff"); }

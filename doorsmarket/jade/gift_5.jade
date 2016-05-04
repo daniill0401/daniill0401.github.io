@@ -1,0 +1,9 @@
+extends gift_layout
+block gift_title
+	| Модерн 1/5 миланский орех
+block add_image
+	+add_image(2)
+block table_values
+	- var cellsTitles = ["Производитель", "Модель", "Материал", "Наличие"]
+	- var cellsValues = ["Мистерикс", "FX-327", "Орех", "На складе"]
+	+gift_cells(cellsTitles, cellsValues, 3500)

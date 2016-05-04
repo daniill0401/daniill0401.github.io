@@ -1,0 +1,9 @@
+extends gift_layout
+block gift_title
+	| Classique W6LW (остекленная), Ростра
+block add_image
+	+add_image(17)
+block table_values
+	- var cellsTitles = ["Производитель", "Модель", "Материал", "Наличие"]
+	- var cellsValues = ["Ростра", "Classique", "Итальянский орех", "На складе"]
+	+gift_cells(cellsTitles, cellsValues, 5200)

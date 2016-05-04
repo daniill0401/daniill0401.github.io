@@ -1,0 +1,9 @@
+extends gift_layout
+block gift_title
+	| Глория, итальянский орех (остекленная) полуторная, Ростра
+block add_image
+	+add_image(18, "200px", "350px")
+block table_values
+	- var cellsTitles = ["Производитель", "Модель", "Материал", "Наличие"]
+	- var cellsValues = ["Ростра", "Глория", "Итальянский орех", "На складе"]
+	+gift_cells(cellsTitles, cellsValues, 8000)

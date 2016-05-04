@@ -1,0 +1,6 @@
+{
+  "name": "Tabs",
+  "dependencies": {
+    "jquery": "latest"
+  }
+}

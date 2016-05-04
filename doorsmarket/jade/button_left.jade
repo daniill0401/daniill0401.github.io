@@ -1,0 +1,24 @@
+.button_application_wrapper
+	.button_application
+		i.button_application_icon=""
+		h3="Оставить заявку"
+.application_form_wrapper
+	.application_fon
+	.application_form
+		form(name="application_form", method="")
+			label
+				| Ваше имя
+				input.application_form_name(name="name", type="text")
+			label
+				| Ваш телефон
+				input.application_form_tel(name="tel", type="text")
+			input.application_form_submit(name="sended_application", type="submit", value="Отправить")
+			img(src="img/cross.png", width="40px").application_cross
+.cart_icon=""
+	.cart_description
+		.cart_description_triangle
+		p.cart_description_gift_count="Товаров 10"
+		p.cart_description_gift_amount="На сумму 50000"
+		button.cart_description_clear="Очистить корзину"
+		button.cart_description_go="Перейти в корзину"
+	.cart_count="0"

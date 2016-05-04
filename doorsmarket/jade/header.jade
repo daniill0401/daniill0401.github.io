@@ -1,0 +1,15 @@
+.wrapper-header
+	.wrapper-header-fill
+		- var links_names = ["+7(963)328-55-82", "Заказать звонок", "Вызвать замерщика"]
+		- var links = ["","#", "#"]
+		.header-nav
+			.header-logo
+				a(href="index.html")
+					img.header-logo-img(src="img/title.png", height="70px")
+				p.header-logo-desc="Межкомнатные двери высокого качества"
+			each val, index in links_names
+				.header-nav-link
+					if links[index]
+						a.header-nav-link-a(href=links[index])=val
+					else
+						p.header-nav-link-p=val

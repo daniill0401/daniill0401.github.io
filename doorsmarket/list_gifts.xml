@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gifts>
+
+<gift id="1">
+<name>Ламинированная дверь Unidoors</name>
+<model>KE-42</model><price>2215</price>
+<imgsrc>img/1.jpg</imgsrc>
+<doclocation>gift_1.html</doclocation>
+</gift>
+
+<gift id="2">
+<name>Ламинированная дверь Unidoors</name>
+<model>MW-38</model><price>2750</price>
+<imgsrc>img/2.jpg</imgsrc>
+<doclocation>gift_2.html</doclocation>
+</gift>
+
+<gift id="3">
+<name>Дверное полотно глухое (белое)</name>
+<model>WE-83</model><price>2990</price>
+<imgsrc>img/3.jpg</imgsrc>
+<doclocation>gift_3.html</doclocation>
+</gift>
+
+<gift id="4">
+<name>Белый дуб, ламинированная дверь Unidoors</name>
+<model>FD-69</model><price>2990</price>
+<imgsrc>img/4.jpg</imgsrc>
+<doclocation>gift_4.html</doclocation>
+</gift>
+
+<gift id="5">
+<name>Модерн 1/5 миланский орех</name>
+<model>FF-87</model><price>3500</price>
+<imgsrc>img/5.jpg</imgsrc>
+<doclocation>gift_5.html</doclocation>
+</gift>
+
+<gift id="4">
+<name>Белый дуб, ламинированная дверь Unidoors</name>
+<model>ED-92</model><price>2990</price>
+<imgsrc>img/4.jpg</imgsrc>
+<doclocation>gift_4.html</doclocation>
+</gift>
+
+<gift id="6">
+<name>Орхидея ,беленый дуб, Ростра</name>
+<model>WW-71</model><price>3750</price>
+<imgsrc>img/6.jpg</imgsrc>
+<doclocation>gift_6.html</doclocation>
+</gift>
+
+<gift id="7">
+<name>Орхидея, беленый дуб, Ростра</name>
+<model>FD-93</model><price>5300</price>
+<imgsrc>img/7.jpg</imgsrc>
+<doclocation>gift_7.html</doclocation>
+</gift>
+
+<gift id="8">
+<name>Модерн 1/8 миланский орех (фьюзинг)</name>
+<model>M-64</model><price>3700</price>
+<imgsrc>img/8.jpg</imgsrc>
+<doclocation>gift_8.html</doclocation>
+</gift>
+
+<gift id="9">
+<name>Классический дуб (глухая), Ростра</name>
+<model>DW-93</model><price>4200</price>
+<imgsrc>img/9.jpg</imgsrc>
+<doclocation>gift_9.html</doclocation>
+</gift>
+
+<gift id="10">
+<name>Груша, клен, ламинированная дверь Unidoors</name>
+<model>OD-47</model><price>4200</price>
+<imgsrc>img/10.jpg</imgsrc>
+<doclocation>gift_10.html</doclocation>
+</gift>
+
+<gift id="11">
+<name>Versia 222, серый дуб, Status</name>
+<model>D-26</model><price>12300</price>
+<imgsrc>img/11.jpg</imgsrc>
+<doclocation>gift_11.html</doclocation>
+</gift>
+
+<gift id="12">
+<name>Антураж 1/16 Венге, итальянский орех</name>
+<model>BO-68</model><price>4800</price>
+<imgsrc>img/12.jpg</imgsrc>
+<doclocation>gift_12.html</doclocation>
+</gift>
+
+<gift id="13">
+<name>Versia 221, итальянский орех, Status</name>
+<model>AA-83</model><price>12000</price>
+<imgsrc>img/13.jpg</imgsrc>
+<doclocation>gift_13.html</doclocation>
+</gift>
+
+<gift id="14">
+<name>Optima 112, белый дуб, Status</name>
+<model>ME-29</model><price>7900</price>
+<imgsrc>img/14.jpg</imgsrc>
+<doclocation>gift_14.html</doclocation>
+</gift>
+
+<gift id="15">
+<name>Trend 411, белый дуб, Status</name>
+<model>EA-40</model><price>8500</price>
+<imgsrc>img/15.jpg</imgsrc>
+<doclocation>gift_15.html</doclocation>
+</gift>
+
+<gift id="16">
+<name>Моделайн Диадема, беленый дуб, Ростра</name>
+<model>FW-22</model><price>4700</price>
+<imgsrc>img/16.jpg</imgsrc>
+<doclocation>gift_16.html</doclocation>
+</gift>
+
+<gift id="17">
+<name>Classique W6LW (остекленная), Ростра</name>
+<model>DD-96</model><price>5200</price>
+<imgsrc>img/17.jpg</imgsrc>
+<doclocation>gift_17.html</doclocation>
+</gift>
+
+<gift id="18">
+<name>Глория, итальянский орех (остекленная) полуторная, Ростра</name>
+<model>AD-71</model><price>8000</price>
+<imgsrc>img/18.jpg</imgsrc>
+<doclocation>gift_18.html</doclocation>
+</gift>
+
+<gift id="19">
+<name>Соло 1ДГ1 шпон, Владимирская фабрика</name>
+<model>O-53</model><price>4000</price>
+<imgsrc>img/19.jpg</imgsrc>
+<doclocation>gift_19.html</doclocation>
+</gift>
+
+<gift id="20">
+<name>Лилия 5ДГ1 шпон, Владимирская фабрика</name>
+<model>EO-65</model><price>4800</price>
+<imgsrc>img/20.jpg</imgsrc>
+<doclocation>gift_20.html</doclocation>
+</gift>
+
+<gift id="21">
+<name>Муза, античный орех (глухая), Матадор</name>
+<model>O-51</model><price>4800</price>
+<imgsrc>img/21.jpg</imgsrc>
+<doclocation>gift_21.html</doclocation>
+</gift>
+
+<gift id="22">
+<name>Миракс, античный орех (остекленная) Матадор</name>
+<model>AW-17</model><price>6200</price>
+<imgsrc>img/22.jpg</imgsrc>
+<doclocation>gift_22.html</doclocation>
+</gift>
+
+<gift id="22">
+<name>Миракс, античный орех (остекленная) Матадор</name>
+<model>MW-22</model><price>6200</price>
+<imgsrc>img/22.jpg</imgsrc>
+<doclocation>gift_22.html</doclocation>
+</gift>
+
+<gift id="22">
+<name>Миракс, античный орех (остекленная) Матадор</name>
+<model>EE-64</model>
+<price>6200</price>
+<imgsrc>img/22.jpg</imgsrc>
+<doclocation>gift_22.html</doclocation>
+</gift>
+</gifts>

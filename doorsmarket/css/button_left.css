@@ -1,0 +1,163 @@
+.button_application {
+  width: 250px;
+  height: 40px;
+  background: #B2B2B2;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: background .2s; }
+  .button_application_wrapper {
+    position: fixed;
+    top: 30%;
+    left: 40px; }
+  .button_application h3 {
+    line-height: 40px;
+    font-weight: 100;
+    font-family: Roboto-regular;
+    font-size: 17px;
+    color: white; }
+  .button_application_icon {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 26px;
+    width: 45px;
+    height: 45px;
+    top: -25px;
+    left: -20px;
+    padding: 6px 5px 0 0;
+    color: rgba(186, 0, 0, 0.6);
+    font-family: Icons;
+    text-align: center;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #B2B2B2;
+    box-shadow: 1px -1px 2px 0px rgba(0, 0, 0, 0.3);
+    transition: all .2s; }
+
+.button_application:hover {
+  background: rgba(186, 0, 0, 0.6); }
+
+.button_application:hover i {
+  border: 3px solid rgba(186, 0, 0, 0.6);
+  color: #B2B2B2; }
+
+.application_form {
+  position: fixed;
+  width: 500px;
+  top: 30%;
+  display: none;
+  left: 0;
+  height: 250px;
+  background: #B2B2B2;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  padding-top: 20px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.6);
+  z-index: 101;
+  opacity: 0; }
+  .application_form_name, .application_form_tel {
+    height: 35px;
+    width: 300px;
+    margin: 10px auto;
+    padding-left: 20px; }
+  .application_form label, .application_form input {
+    display: block; }
+  .application_form label {
+    margin: 0 auto; }
+  .application_form_submit {
+    margin: 20px auto;
+    width: 300px;
+    height: 40px;
+    cursor: pointer; }
+
+.application_cross {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  opacity: .5;
+  cursor: pointer; }
+
+.application_fon {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); }
+
+.cart_icon {
+  position: fixed;
+  bottom: 50px;
+  left: 100px;
+  font-family: Icons;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer; }
+
+.cart_icon:hover .cart_description {
+  opacity: 1; }
+
+.cart_description {
+  position: fixed;
+  bottom: 110px;
+  left: 50px;
+  width: 150px;
+  height: 130px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  font-family: Roboto-regular;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 8px;
+  line-height: 25px;
+  color: white;
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity ease-in-out .2s; }
+  .cart_description_triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-top: 10px solid #999; }
+  .cart_description_clear {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -65px;
+    width: 130px;
+    height: 20px;
+    font-size: 11px;
+    font-family: Roboto;
+    cursor: pointer; }
+  .cart_description_go {
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    margin-left: -65px;
+    width: 130px;
+    height: 20px;
+    font-size: 11px;
+    font-family: Roboto;
+    cursor: pointer; }
+
+.cart_count {
+  position: fixed;
+  text-align: center;
+  line-height: 20px;
+  width: 40px;
+  height: 20px;
+  bottom: 75px;
+  left: 108px;
+  color: white;
+  font-family: Roboto-regular;
+  font-size: 19px; }

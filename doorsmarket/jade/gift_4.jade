@@ -1,0 +1,9 @@
+extends gift_layout
+block gift_title
+	| Белый дуб, ламинированная дверь Unidoors
+block add_image
+	+add_image(2)
+block table_values
+	- var cellsTitles = ["Производитель", "Модель", "Материал", "Наличие"]
+	- var cellsValues = ["Unidoors", "FX-327", "Дуб", "На складе"]
+	+gift_cells(cellsTitles, cellsValues, 2990)

@@ -1,0 +1,9 @@
+extends gift_layout
+block gift_title
+	| Груша, клен, ламинированная дверь Unidoors
+block add_image
+	+add_image(2)
+block table_values
+	- var cellsTitles = ["Производитель", "Модель", "Материал", "Наличие"]
+	- var cellsValues = ["Unidoors", "FX27", "Груша, клен", "На складе"]
+	+gift_cells(cellsTitles, cellsValues, 4200)
