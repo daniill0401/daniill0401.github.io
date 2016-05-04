@@ -17,7 +17,7 @@
 			var position = xmlDoc.getElementsByTagName('gift').item(i).childNodes[1].textContent;
 			var model = xmlDoc.getElementsByTagName('gift').item(i).childNodes[3].textContent;
 			var price = parseInt(xmlDoc.getElementsByTagName('gift').item(i).childNodes[4].textContent);
-			var image = "../"+xmlDoc.getElementsByTagName('gift').item(i).childNodes[6].textContent;
+			var image = xmlDoc.getElementsByTagName('gift').item(i).childNodes[6].textContent;
 			var count = parseInt(json_obj_cookie['cart-count'][item]);
 			var gift_id = parseInt(item);
 
