@@ -1,12 +1,13 @@
 	/// сборка корзины
 
-	var cart_build = function() {
+	function cart_build() {
 
 		var appendObject = document.getElementsByClassName('cartpage_content').item(0);
 			var amount = 0;
 			var cartpage_all_value;
 
-		var xmlDoc = mainModule.xmlDoc;
+		var xmlDoc = document.xmlDoc;
+
 
 		var json_obj_cookie = JSON.parse(decodeURIComponent(document.cookie).match(/{.*}/g)[0]);
 
@@ -228,6 +229,7 @@
 
 	}
 
-	cart_build();
+	//addEventListener('load', cart_build);
+
 
 

@@ -2,12 +2,19 @@
   width: 250px;
   height: 40px;
   background: #B2B2B2;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   text-align: center;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  -webkit-transition: background .2s;
   transition: background .2s; }
   .button_application_wrapper {
     position: fixed;
@@ -21,6 +28,8 @@
     color: white; }
   .button_application_icon {
     position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     font-size: 26px;
     width: 45px;
@@ -31,10 +40,13 @@
     color: rgba(186, 0, 0, 0.6);
     font-family: Icons;
     text-align: center;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
     background: white;
     border: 3px solid #B2B2B2;
+    -webkit-box-shadow: 1px -1px 2px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 1px -1px 2px 0px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all .2s;
     transition: all .2s; }
 
 .button_application:hover {
@@ -53,9 +65,11 @@
   height: 250px;
   background: #B2B2B2;
   text-align: center;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
   color: white;
   padding-top: 20px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.6);
   z-index: 101;
   opacity: 0; }
@@ -93,7 +107,7 @@
 
 .cart_icon {
   position: fixed;
-  bottom: 50px;
+  bottom: 51px;
   left: 100px;
   font-family: Icons;
   font-size: 50px;
@@ -109,6 +123,7 @@
   left: 50px;
   width: 150px;
   height: 130px;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.4);
   font-family: Roboto-regular;
@@ -117,8 +132,10 @@
   padding-top: 8px;
   line-height: 25px;
   color: white;
+  -webkit-box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
   opacity: 0;
+  -webkit-transition: opacity ease-in-out .2s;
   transition: opacity ease-in-out .2s; }
   .cart_description_triangle {
     position: absolute;
@@ -160,4 +177,4 @@
   left: 108px;
   color: white;
   font-family: Roboto-regular;
-  font-size: 19px; }
+  font-size: 17px; }

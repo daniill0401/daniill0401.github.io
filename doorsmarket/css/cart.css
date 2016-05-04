@@ -45,6 +45,8 @@
     right: 0;
     width: 1px;
     height: 140px;
+    background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(rgba(0, 0, 0, 0.3)), to(transparent));
+    background: -webkit-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.3), transparent);
     background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3), transparent); }
   .cartpage_gift_image:before {
     position: absolute;
@@ -53,6 +55,8 @@
     right: left;
     width: 1px;
     height: 140px;
+    background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(rgba(0, 0, 0, 0.3)), to(transparent));
+    background: -webkit-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.3), transparent);
     background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3), transparent); }
   .cartpage_gift_description {
     position: relative;
@@ -97,6 +101,8 @@
     right: -10px;
     width: 1px;
     height: 140px;
+    background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(rgba(0, 0, 0, 0.3)), to(transparent));
+    background: -webkit-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.3), transparent);
     background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3), transparent); }
   .cartpage_gift_howmuch {
     display: inline-block;
@@ -119,28 +125,38 @@
       position: absolute;
       width: 30px;
       height: 30px;
+      -webkit-border-radius: 50%;
       border-radius: 50%;
       background: rgba(0, 0, 0, 0.5);
       border: 1px solid transparent;
       cursor: pointer;
       top: 48px;
+      -webkit-transition: all ease-in-out .1s;
       transition: all ease-in-out .1s; }
       .cartpage_gift_howmuch_button_up {
         right: 0; }
       .cartpage_gift_howmuch_button_triangle {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
         transform: rotate(45deg);
         margin: 8px 0 0 7px;
         width: 12px;
         height: 12px;
+        -webkit-border-radius: 2px;
         border-radius: 2px;
+        -webkit-transition: all ease-in-out .1s;
         transition: all ease-in-out .1s; }
         .cartpage_gift_howmuch_button_triangle_up {
           border-top: 2px solid white;
           border-right: 2px solid white;
+          -webkit-transform: translate(-1px) rotate(45deg);
+          -ms-transform: translate(-1px) rotate(45deg);
           transform: translate(-1px) rotate(45deg); }
         .cartpage_gift_howmuch_button_triangle_down {
           border-left: 2px solid white;
           border-bottom: 2px solid white;
+          -webkit-transform: translate(3px) rotate(45deg);
+          -ms-transform: translate(3px) rotate(45deg);
           transform: translate(3px) rotate(45deg); }
     .cartpage_gift_howmuch_button:hover {
       border: 1px solid rgba(0, 0, 0, 0.2);
@@ -160,6 +176,8 @@
     right: -15px;
     width: 1px;
     height: 140px;
+    background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(rgba(0, 0, 0, 0.3)), to(transparent));
+    background: -webkit-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.3), transparent);
     background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3), transparent); }
   .cartpage_gift_sum {
     position: relative;
@@ -187,6 +205,8 @@
     right: -10px;
     width: 1px;
     height: 140px;
+    background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(rgba(0, 0, 0, 0.3)), to(transparent));
+    background: -webkit-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.3), transparent);
     background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3), transparent); }
 
 .cartpage_gift:after {
@@ -196,6 +216,8 @@
   right: -5%;
   width: 110%;
   height: 1px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(rgba(0, 0, 0, 0.3)), to(transparent));
+  background: -webkit-linear-gradient(right, transparent, rgba(0, 0, 0, 0.3), transparent);
   background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.3), transparent); }
 
 .cartpage_all {

@@ -3,6 +3,7 @@
   height: 86px;
   background-image: url(../img/back_header.png);
   background-repeat: repeat;
+  -webkit-transition: all ease-in-out .2s;
   transition: all ease-in-out .2s; }
 
 .header-nav-link {

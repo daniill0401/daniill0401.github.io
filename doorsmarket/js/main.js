@@ -28,29 +28,39 @@ var mainModule = (function(){
 	//// XML
 
 	var load_xml = function(name) {
-		try {  // Internet explorer
-			xmlDoc = new ActiveXObject("Microsoft XMLDOM");}
-			catch(e) {
-				try { // Firefox, Mozilla, opera, etc.
-					xmlDoc = document.implementation.createDocument("", "", null);
+
+		var tempRequest, answer;
+
+		try {  // all
+
+						tempRequest = new XMLHttpRequest();
+						tempRequest.open("GET", name, true);
+						tempRequest.send(null);
+						tempRequest.onreadystatechange = function(){
+							if(this.readyState==4 && this.status==200){
+								xmlDoc = tempRequest.responseXML.documentElement;
+								document.xmlDoc = xmlDoc;
+
+								// вызываю зависющие от этого параметра функции
+
+
+								cart_amount_func();
+								cart_build();
+							}
+						};
+
+					}
+
+			catch(e){ 
+
+				alert(e.message);
+
 				}
-				catch(e){
-					alert(e.message);
-				}
-			}
-		try {
-			xmlDoc.async=false;
-			xmlDoc.load(name);
-			return xmlDoc;
 		}
 
-		catch (e){
-			alert(e.message);
-		}
-	}
 
-
-	var xmlDoc = load_xml("list_gifts.xml");
+	var xmlDoc;
+	 	load_xml("list_gifts.xml");
 
 	/// подсчитываю текущую сумму покупок
 
@@ -70,7 +80,6 @@ var mainModule = (function(){
 		cart_amount.textContent = "На сумму "+cart_sum;
 	}
 
-	cart_amount_func();
 
 	/// количество товаров в корзине
 
@@ -335,8 +344,7 @@ var gift_buttons_click = function() {
 	}
 
 	return {
-		init: init,
-		xmlDoc: xmlDoc
+		init: init
 	};
 
 
