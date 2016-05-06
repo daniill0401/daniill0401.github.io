@@ -1,10 +1,6 @@
 var mainModule = (function(){
 
 	var regVCart = /{"cart-count":/g;
-		console.log(decodeURIComponent(document.cookie));
-
-
-
 
 	/// устанавливаю куки, если нету
 
@@ -45,7 +41,12 @@ var mainModule = (function(){
 
 
 								cart_amount_func();
-								cart_build();
+
+								if(document.location.href.match(/\w+\.html/g)){
+
+									cart_build();
+	
+								}
 							}
 						};
 
