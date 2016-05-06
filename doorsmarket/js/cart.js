@@ -1,3 +1,5 @@
+
+
 	/// сборка корзины
 
 	function cart_build() {
@@ -225,11 +227,4 @@
 
 			}
 
-
-
 	}
-
-	//addEventListener('load', cart_build);
-
-
-
