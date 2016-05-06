@@ -42,7 +42,7 @@ var mainModule = (function(){
 
 								cart_amount_func();
 
-								if(document.location.href.match(/\w+\.html/g)){
+								if(document.location.href.match(/\w+\.html/g)=="cart.html"){
 
 									cart_build();
 	
