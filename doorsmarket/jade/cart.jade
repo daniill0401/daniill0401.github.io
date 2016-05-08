@@ -1,14 +1,10 @@
 extends layout
 block css
 	link(rel="stylesheet", type="text/css", href="css/cart.css")
+	script(type="text/javascript", src="js/cart.js")
 block title
 	| Корзина на DoorsMarket
 block content
 	.cartpage_wrapper
 		h2.cartpage_title="Ваши покупки:"
 		.cartpage_content
-			//-.cartpage_all
-				p.cartpage_all_title="Итого:"
-				p.cartpage_all_value	="5000 р."
-block another_scripts
-	script(type="text/javascript", src="js/cart.js")

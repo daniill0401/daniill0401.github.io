@@ -14,19 +14,12 @@
   width: 200px;
   height: 40px;
   background: #B2B2B2;
-  -webkit-transform-origin: 100% 0;
-  -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   text-align: center;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.6);
   cursor: pointer;
-  -webkit-transition: background .2s;
   transition: background .2s; }
   .buttons_zamerchik h3, .buttons_callback h3 {
     line-height: 40px;
@@ -36,8 +29,6 @@
     color: white; }
   .buttons_zamerchik_icon, .buttons_callback_icon {
     position: absolute;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     font-size: 27px;
     width: 45px;
@@ -48,13 +39,10 @@
     color: rgba(186, 0, 0, 0.6);
     font-family: Icons;
     text-align: center;
-    -webkit-border-radius: 50%;
     border-radius: 50%;
     background: white;
     border: 3px solid #B2B2B2;
-    -webkit-box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.3);
     box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.3);
-    -webkit-transition: all .2s;
     transition: all .2s; }
 
 .buttons_zamerchik:hover, .buttons_callback:hover {
@@ -97,9 +85,7 @@
   text-align: center;
   color: white;
   padding-top: 100px;
-  -webkit-border-radius: 10px 63% 10px 63%;
   border-radius: 10px 63% 10px 63%;
-  -webkit-box-shadow: -3px 3px 8px 1px rgba(0, 0, 0, 0.6);
   box-shadow: -3px 3px 8px 1px rgba(0, 0, 0, 0.6);
   display: none;
   opacity: 0; }
@@ -112,19 +98,14 @@
   .zamer_form input {
     margin-bottom: 10px;
     height: 40px;
-    -webkit-border-radius: 5px;
     border-radius: 5px; }
   .zamer_form_submit {
     border: none;
     outline: none;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(69, 69, 69, 0.9)), color-stop(rgba(194, 194, 194, 0.9)), to(rgba(69, 69, 69, 0.9)));
-    background: -webkit-linear-gradient(bottom, rgba(69, 69, 69, 0.9), rgba(194, 194, 194, 0.9), rgba(69, 69, 69, 0.9));
     background: linear-gradient(to top, rgba(69, 69, 69, 0.9), rgba(194, 194, 194, 0.9), rgba(69, 69, 69, 0.9));
     cursor: pointer;
     margin-top: 20px; }
   .zamer_form_submit:hover {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(40, 40, 40, 0.9)), color-stop(rgba(205, 205, 205, 0.9)), to(rgba(40, 40, 40, 0.9)));
-    background: -webkit-linear-gradient(bottom, rgba(40, 40, 40, 0.9), rgba(205, 205, 205, 0.9), rgba(40, 40, 40, 0.9));
     background: linear-gradient(to top, rgba(40, 40, 40, 0.9), rgba(205, 205, 205, 0.9), rgba(40, 40, 40, 0.9));
     color: white; }
   .zamer_form_submit:active {
@@ -159,9 +140,7 @@
   color: white;
   text-align: center;
   padding-top: 40px;
-  -webkit-border-radius: 15px;
   border-radius: 15px;
-  -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.6);
   box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.6);
   opacity: 0;
   display: none; }
@@ -174,19 +153,14 @@
   .callback_form input {
     margin-bottom: 10px;
     height: 40px;
-    -webkit-border-radius: 5px;
     border-radius: 5px; }
   .callback_form_submit {
     border: none;
     outline: none;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(69, 69, 69, 0.9)), color-stop(rgba(194, 194, 194, 0.9)), to(rgba(69, 69, 69, 0.9)));
-    background: -webkit-linear-gradient(bottom, rgba(69, 69, 69, 0.9), rgba(194, 194, 194, 0.9), rgba(69, 69, 69, 0.9));
     background: linear-gradient(to top, rgba(69, 69, 69, 0.9), rgba(194, 194, 194, 0.9), rgba(69, 69, 69, 0.9));
     cursor: pointer;
     margin-top: 20px; }
   .callback_form_submit:hover {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(40, 40, 40, 0.9)), color-stop(rgba(205, 205, 205, 0.9)), to(rgba(40, 40, 40, 0.9)));
-    background: -webkit-linear-gradient(bottom, rgba(40, 40, 40, 0.9), rgba(205, 205, 205, 0.9), rgba(40, 40, 40, 0.9));
     background: linear-gradient(to top, rgba(40, 40, 40, 0.9), rgba(205, 205, 205, 0.9), rgba(40, 40, 40, 0.9));
     color: white; }
   .callback_form_submit:active {

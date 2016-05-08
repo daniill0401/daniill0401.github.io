@@ -1,20 +1,8 @@
 .animated {
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: .3s;
   animation-duration: .3s;
-  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
-
-@-webkit-keyframes keyframe_application_form {
-  from {
-    opacity: 0;
-    margin-left: -510px; }
-  to {
-    opacity: 1;
-    margin-left: 0px; } }
 
 @keyframes keyframe_application_form {
   from {
@@ -25,15 +13,8 @@
     margin-left: 0px; } }
 
 .keyframe_application_form {
-  -webkit-animation-name: keyframe_application_form;
   animation-name: keyframe_application_form;
   display: block; }
-
-@-webkit-keyframes keyframe_app_button {
-  from {
-    margin-left: 0; }
-  to {
-    margin-left: 515px; } }
 
 @keyframes keyframe_app_button {
   from {
@@ -42,14 +23,7 @@
     margin-left: 515px; } }
 
 .keyframe_app_button {
-  -webkit-animation-name: keyframe_app_button;
   animation-name: keyframe_app_button; }
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 
 @keyframes fadeIn {
   from {
@@ -59,16 +33,7 @@
 
 .fadeIn {
   display: block;
-  -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
-
-@-webkit-keyframes topIn {
-  from {
-    opacity: 0;
-    top: 0%; }
-  to {
-    opacity: 1;
-    top: 50%; } }
 
 @keyframes topIn {
   from {
@@ -79,16 +44,7 @@
     top: 50%; } }
 
 .topIn {
-  -webkit-animation-name: topIn;
   animation-name: topIn; }
-
-@-webkit-keyframes topOut {
-  from {
-    opacity: 1;
-    top: 50%; }
-  to {
-    opacity: 0;
-    top: 0%; } }
 
 @keyframes topOut {
   from {
@@ -99,15 +55,7 @@
     top: 0%; } }
 
 .topOut {
-  -webkit-animation-name: topOut;
   animation-name: topOut; }
-
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0;
-    display: none; } }
 
 @keyframes fadeOut {
   from {
@@ -117,17 +65,7 @@
     display: none; } }
 
 .fadeOut {
-  -webkit-animation-name: fadeOut;
   animation-name: fadeOut; }
-
-@-webkit-keyframes keyframe_application_form_reverse {
-  from {
-    opacity: 1;
-    margin-left: 0px; }
-  to {
-    opacity: 0;
-    margin-left: -510px;
-    display: none; } }
 
 @keyframes keyframe_application_form_reverse {
   from {
@@ -139,14 +77,7 @@
     display: none; } }
 
 .keyframe_application_form_reverse {
-  -webkit-animation-name: keyframe_application_form_reverse;
   animation-name: keyframe_application_form_reverse; }
-
-@-webkit-keyframes keyframe_app_button_reverse {
-  from {
-    margin-left: 515px; }
-  to {
-    margin-left: 0px; } }
 
 @keyframes keyframe_app_button_reverse {
   from {
@@ -155,5 +86,4 @@
     margin-left: 0px; } }
 
 .keyframe_app_button_reverse {
-  -webkit-animation-name: keyframe_app_button_reverse;
   animation-name: keyframe_app_button_reverse; }

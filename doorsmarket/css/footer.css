@@ -27,17 +27,13 @@
   margin-left: 70px;
   width: 50px;
   height: 50px;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-image: url(../img/social_icons.jpg);
   background-repeat: no-repeat;
   cursor: pointer;
   opacity: .9;
   border: 1px solid rgba(0, 0, 0, 0.4);
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: all ease-in-out .3s;
   transition: all ease-in-out .3s; }
   .footer_social_1 {
     background-position: -112px -69px; }
@@ -52,8 +48,6 @@
 
 .footer_social:hover {
   border: 1px solid white;
-  -webkit-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
   transform: rotate(360deg); }
 
 .footer_social:first-child {
