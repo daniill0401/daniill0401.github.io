@@ -1,0 +1,9 @@
+extends gift_layout
+block gift_title
+	| Антураж 1/16 Венге, итальянский орех
+block add_image
+	+add_image(2)
+block table_values
+	- var cellsTitles = ["Производитель", "Модель", "Материал", "Наличие"]
+	- var cellsValues = ["Антураж", "LNj-2987", "Итальянский орех", "На складе"]
+	+gift_cells(cellsTitles, cellsValues, 4800)

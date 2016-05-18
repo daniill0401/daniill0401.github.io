@@ -1,0 +1,28 @@
+mixin gift_list(array_desc, array_price, array_exclude_width)
+	.wrapper_gifts
+		each val, index in array_price
+			.wrapper_gifts_item_wrap
+				.wrapper_gifts_item
+					- var src = "img/"+ (index+1)+".jpg";
+					- var href = "gift_"+(index+1);
+					- for(i=0; i<array_exclude_width.length; i++)
+						- if(array_exclude_width[i]==index+1){ var width = "110px";} else{ var width = "90px";}
+					img.wrapper_gifts_item_img(src=src, width=width, height="190px", data-link=href)
+					.wrapper_gifts_item_for_p
+						p.wrapper_gifts_item_desc=array_desc[index]
+						p.wrapper_gifts_item_price=array_price[index]
+					button.wrapper_gifts_item_button="Добавить в корзину"
+mixin gift_cells(array_titles, array_values, price)
+	table
+		each val, index in array_titles
+			tr.gift_layout_description-tr
+				td.gift_layout_description-td=array_titles[index]
+				td.gift_layout_description-td=array_values[index]
+	.gift_layout_description_price
+		h2.gift_layout_description_price-title="Цена: "
+			span.gift_layout_description_price-value=price+" р."
+mixin add_image(src, width, height)
+	if width && height
+		img.gift_layout_img(src!="img/"+src+".jpg", width=width, height=height)
+	else
+		img.gift_layout_img(src!="img/"+src+".jpg", width="180px", height="400px")

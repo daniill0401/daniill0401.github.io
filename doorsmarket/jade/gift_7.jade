@@ -1,0 +1,9 @@
+extends gift_layout
+block gift_title
+	| Орхидея ,беленый дуб, Ростра
+block add_image
+	+add_image(2)
+block table_values
+	- var cellsTitles = ["Производитель", "Модель", "Материал", "Наличие"]
+	- var cellsValues = ["Ростра", "FX-327", "Орхидея, беленый дуб", "На складе"]
+	+gift_cells(cellsTitles, cellsValues, 5300)

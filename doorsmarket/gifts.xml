@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gifts>
+	<unidoors>
+		<door id="1">
+			<name>Ламинированая дверь Unidoors</name>
+			<make>Unidoors</make>
+			<price>2215</price>
+			<model>FX-1</model>
+			<material>Ясень</material>
+			<presence>На складе</presence>
+			<imgsrc>1</imgsrc>
+			<doclocation>gift_1.html</doclocation>
+		</door>
+	</unidoors>
+</gifts>

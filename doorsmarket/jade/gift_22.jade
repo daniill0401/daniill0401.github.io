@@ -1,0 +1,9 @@
+extends gift_layout
+block gift_title
+	| Миракс, античный орех (остекленная) Матадор
+block add_image
+	+add_image(21)
+block table_values
+	- var cellsTitles = ["Производитель", "Модель", "Материал", "Наличие"]
+	- var cellsValues = ["Матадор", "Миракс", "Античный орех", "На складе"]
+	+gift_cells(cellsTitles, cellsValues, 6200)

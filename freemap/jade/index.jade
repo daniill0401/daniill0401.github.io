@@ -1,0 +1,201 @@
+doctype html
+html
+	head
+		meta(http-equiv="Content: text/html, charset: utf-8;")
+		link(rel="stylesheet", href="css/main.css", type="text/css")
+		meta(name="viewport", content="width=device-width")
+	body
+		.menu_wrapper
+			- var menuArray = new Array(6)
+			each val, index in menuArray
+				- var cls = "menu_block_"+(index+1)
+				- var top = "top: "+40*index+"px";
+				.menu_block(class=cls, style=top)
+		.first_wrapper
+			.first_title_wrapper
+				.first_title_logo
+					.first_title_logo_img
+					h1.first_title_logo_h1="Короткий дескриптор максимум в 3 или 4 слова"
+				.first_title_contacts
+					p.first_title_contacts_address="Санкт-Петербург, Таврическая ул., 5"
+					p.first_title_contacts_tel="8 (812) 948-00-95"
+					p.first_title_contacts_mail="spbfreemap@gmail.com"
+			.first_main_wrapper
+				.first_main_cart_wrap
+					.first_main_cart1
+					.first_main_cart2
+				p.first_main_desc!="Увеличьте количество туристов в ресторане, разместив рекламу<br> в 204 отелях и хостелах <br>Санкт-Петербурга на <span style='color: rgb(255,192,0);'>40 000 </span>картах"
+				button.first_main_button="Узнать подробнее"
+			.arrow_wrapper
+				.arrow_container
+					.arrow_triangle
+					.arrow
+				p.arrow_desc!="Являемся официальной картой города,<br> сотрудничаем с комитетом по туризму Санкт-Петербурга"
+		.second_wrapper
+			.second_wrapper_logo
+				h1.second_logo_title="Рекламу Вашего заведения турист получит лично в руки"
+				p.second_logo_desc!="С нами сотрудничают более <span class='second_logo_desc_span'>200</span> отелей, <span class='second_logo_desc_span'>8-ми</span> информационных точек, <span class='second_logo_desc_span'>30</span> паромных линий, <span class='second_logo_desc_span'>3-х</span> туристических компаний"
+			.second_cart_wrapper
+				h2.second_cart_title="Нажмите, чтобы увидеть, где турист получит карту с Вашей рекламой"
+			.second_over-icons
+				- var arrayIcons = ["museum", "hotels", "turfirms", "info"]
+				- var iconsDesc = ["Музеи", "Отели", "Турфирмы", "Инфобюро"]
+				each val, index in arrayIcons
+					.second_over-icons_cell
+						- var background = "background-image:url(../img/cartlogo/"+val+".png)"
+						.second_over-icons_cell-icon(style=background)
+						.second_over-icons_cell-desc=iconsDesc[index]
+			.second_footer_wrapper
+				p.second_footer_desc="Получить весь список точек распостранения карт"
+				button.second_footer_button="Получить список"
+				p.second_footer_now="прямо сейчас"
+				img.second_footer_arrow(src="img/white_arrow.png", width="70")
+			.traf_wrapper
+				.traf_left_side
+					.traf_left_side_fill
+						.traf_perspective(class="traf_perspective_1")
+							.traf_left-hand
+							.traf_block(class="traf_block_1")
+							.traf_over1
+						.traf_perspective(class="traf_perspective_2")
+							.traf_block(class="traf_block_2")
+					.traf_perspective(class="traf_perspective_3")
+						.traf_block(class="traf_block_3")
+				.traf_right_side
+					.traf_perspective(class="traf_perspective_4")
+						.traf_block(class="traf_block_4")
+					.traf_right_side_fill
+						.traf_perspective(class="traf_perspective_5")
+							.traf_block(class="traf_block_5")
+						.traf_perspective(class="traf_perspective_6")
+							.traf_right-hand
+							.traf_block(class="traf_block_6")
+							.traf_over6
+		.third_wrapper
+			.third_competitor
+				h1.third_competitor-title="Карта конкурентов"
+				.third_our_fill
+						- var advantages = new Array(7)
+						- var advantagesTitles = ["Тираж карт", "Количество мест", "Ваше место на карте", "Реклама отелей", "Точки распостранения", "Качество печати", "Компактность карты"]
+						- var advantagesDesc = ["Печатают от 10 до 25 тыс на двух языках", "От 24 до 40 рекламных мест<br>Карта перенасыщена рекламой", "Вы сами выбираете текст и побдбираете картинку", "Рекламируют отели<br>Снижают охват туристов, теряют довоенный охват", "481 точка распостранения<br>Мы можем договориться с удобными для Вас точками и добавить их", "Используем глянцевую бумагу, толщиной 130мм,<br> 7 фальцев", "Удобный размер,<br> карта легко помещается в карман"]
+						each val, index in advantages
+							- var cls = "third_advantage_wrapper"+(index+1)
+							.third_advantage_wrapper(class=cls)
+								- var clsIcon = "third_advantage_icon"+(index+1)
+								p.third_advantage_icon(class=clsIcon)
+								p.third_advantage_title!=advantagesTitles[index]
+								p.third_advantage_desc!=advantagesDesc[index]
+				.third_competitor-cart
+			.third_our_big
+				.third_center-line
+						.third_center-line_circle
+							.third_center-line_circle_arrow-right1(class="third_center-line_circle_arrow")
+							.third_center-line_circle_arrow-right2(class="third_center-line_circle_arrow")
+							.third_center-line_circle_arrow-left1(class="third_center-line_circle_arrow")
+							.third_center-line_circle_arrow-left2(class="third_center-line_circle_arrow")
+				.third_our
+					.third_our_fill
+						h1.third_our_title="Наша карта"
+						- var advantages = new Array(7)
+						- var advantagesTitles = ["Тираж карт", "Количество мест", "Ваше место на карте", "Реклама отелей", "Точки распостранения", "Качество печати", "Компактность карты"]
+						- var advantagesDesc = ["Печатают от 10 до 25 тыс на двух языках", "От 24 до 40 рекламных мест<br>Карта перенасыщена рекламой", "Вы сами выбираете текст и побдбираете картинку", "Рекламируют отели<br>Снижают охват туристов, теряют довоенный охват", "481 точка распостранения<br>Мы можем договориться с удобными для Вас точками и добавить их", "Используем глянцевую бумагу, толщиной 130мм,<br> 7 фальцев", "Удобный размер,<br> карта легко помещается в карман"]
+						each val, index in advantages
+							- var cls = "third_advantage_wrapper"+(index+1)
+							.third_advantage_wrapper(class=cls)
+								- var clsIcon = "third_advantage_icon"+(index+1)
+								p.third_advantage_icon(class=clsIcon)
+								p.third_advantage_title!=advantagesTitles[index]
+								p.third_advantage_desc!=advantagesDesc[index]
+						.third_our-cart
+			p.third_footer-desc="Свяжитесь с нами, и наш менеджер привезет Вам нашу карту и карты конкурентов"
+			button.third_footer-button="Получить карты"
+		.forth_wrapper
+			.forth_wrapper-over
+				h1.forth_title="Стоимость размещения"
+				p.forth_desc="Чем дольше Вы с нами - тем дешевле для Вас"
+			.forth_cart-wrap
+				.forth_first-cart
+				.forth_first-fon
+				.forth_second-cart
+				.forth_second-fon
+				p.forth_arrow_desc-left!="Изображение 21х23мм<br>Текст до 500 символов<br>Логотип на карте города<br>(по вашему запросу)"
+				p.forth_arrow_desc-right!="Баннер<br>Рекламный блок 80х84мм<br>рядом с картой города.<br>Может использоваться в качестве купона."
+				.forth_arrow-left(class="forth_arrow")
+				.forth_arrow-rightBottom(class="forth_arrow")
+				.forth_arrow-rightTop(class="forth_arrow")
+				.forth_cart-over
+					.forth_cart-over_right-left
+					.forth_cart-over_right-right
+				.forth_cart-over_left-wrap
+					.forth_cart-over_left-cart
+			.forth_list-wrapper
+				- var arrayTr = new Array(4)
+				- var arrayTd = new Array(5)
+				- var arrayTerm = ['1 мес.', '3 мес.', '5 мес.', '12 мес.']
+				- var prices = [["11 000 р.", "24 000 р.", "36 000 р.", "60 000 р."], ["19 000 р.", "45 600 р.", "67 000 р.", "119 000 р."], ["24 000 р.", "57 600 р.", "79 000 р.", "145 500 р."]]
+				- var position = ["Листинг", "Баннер", "Листинг + Баннер"]
+				each val, index in arrayTr
+					if index>0
+						.forth_list-line
+							each val, ind in arrayTd
+								if ind==0
+									.forth_list-cell=position[index-1]
+								else
+									.forth_list-cell=prices[index-1][ind-1]
+					else
+						.forth_list-line
+							each val, ind in arrayTd
+								if ind>0
+									.forth_list-cell=arrayTerm[ind-1]
+								else
+									.forth_list-cell
+		.fifth_wrapper
+			h1.fifth_title="Нам уже доверяют"
+			- var partners = new Array(8)
+			- var descPositions = ["Благодарственное письмо", "Отзыв", "Сертификат"]
+			- var descTitles = ["Четыре икса", "музЭрос", "Antalya", "Укроп", "Таксовичкоф", "Ginza", "Daiquiri", "Neva"]
+			.fifth_partners_wrapper
+				- var partnersList = new Array(3)
+				each value, i in partnersList
+					- var classFill = "fifth_partners_wrapper-fill-"+(i+1)
+					.fifth_partners_wrapper-fill(class=classFill)
+						each val, index in partners
+							.fifth_partners_cell
+								- var background = "background-image: url(../img/partners/"+(index+1)+".jpg)"
+								.fifth_partners_foto(style=background)
+								.fifth_partners_desc
+									p.fifth_partners_desc-title=descTitles[index]
+									ul.fifth_partners_desc-ul
+										each val, index in descPositions
+											li.fifth_partners_desc-li=descPositions[index]
+			.fifth_partners_toggle-wrap
+				p.fifth_partners_toggle-1(class="fifth_partners_toggle fifth_partners_toggle-active")="1"
+				p.fifth_partners_toggle-2(class="fifth_partners_toggle")="2"
+				p.fifth_partners_toggle-3(class="fifth_partners_toggle")="3"
+			.fifth_youtube-wrapper
+				.fifth_youtube-frame
+				p.fifth_youtube-desc!="Видеоотзыв о нас<br>Описание о стороне, делающей отзыв"
+			.fifth_smi-wrapper
+				h2.fifth_smi-title="Сми о нас"
+				.fifth_smi_icons-wrapper
+					.fifth_smi_icons-village
+					.fifth_smi_icons-cuker
+			.fifth_footer-wrapper
+				.fifth_footer-wrapper-over
+		.sixth_wrapper
+			h1.sixth_title="Часто задаваемые вопросы"
+			.sixth_questions-wrapper
+				- var questionsArray = new Array(7)
+				- var questionsValues = ["Один", "Второй", "Третий", "Четвертый", "Пятый", "Шестой", "Седьмой"]
+				- var questionsAnswers = [""]
+				each val, index in questionsArray
+					- var cls = "sixth_questions-block"+(index+1)
+					.sixth_questions-block(class=cls)
+						h3.sixth_questions-title(data-number=index)=questionsValues[index]+" вопрос..."
+						.sixth_questions-cross
+						.sixth_questions-triangle
+						p.sixth_questions-answer=questionsValues[index]+" ответ..."
+			.sixth_manager
+			p.sixth_manager_question!="Остались вопросы?<br>Наш управляющий ответит Вам!"
+			button.sixth_manager_button="Связаться с управляющим"
+		script(type="text/javascript", src="js/my.js")

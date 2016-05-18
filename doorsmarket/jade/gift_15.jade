@@ -1,0 +1,9 @@
+extends gift_layout
+block gift_title
+	| Trend 411, белый дуб, Status
+block add_image
+	+add_image(2)
+block table_values
+	- var cellsTitles = ["Производитель", "Модель", "Материал", "Наличие"]
+	- var cellsValues = ["Trend", "Tr-97", "Белый дуб", "На складе"]
+	+gift_cells(cellsTitles, cellsValues, 8500)

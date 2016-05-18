@@ -1,0 +1,36 @@
+.wrapper-header-fill {
+  margin: 0 auto;
+  height: 86px;
+  background-image: url(../img/back_header.png);
+  background-repeat: repeat;
+  transition: all ease-in-out .2s; }
+
+.header-nav-link {
+  height: 86px;
+  display: inline-block;
+  text-align: center;
+  padding: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
+  float: right;
+  vertical-align: top; }
+  .header-nav-link a, .header-nav-link p {
+    line-height: 86px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: .4px;
+    font-family: Roboto-regular; }
+  .header-nav-link a:hover {
+    color: rgba(166, 0, 0, 0.9); }
+
+.header-nav:last-child {
+  margin-right: 50px; }
+
+.header-logo {
+  vertical-align: top;
+  width: 400px;
+  display: inline-block; }
+  .header-logo-desc {
+    font-size: 17px;
+    font-family: Roboto;
+    color: rgba(255, 255, 255, 0.8);
+    margin: -20px 0 0 40px; }

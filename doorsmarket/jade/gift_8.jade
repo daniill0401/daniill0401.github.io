@@ -1,0 +1,9 @@
+extends gift_layout
+block gift_title
+	| Модерн 1/8 миланский орех (фьюзинг)
+block add_image
+	+add_image(2)
+block table_values
+	- var cellsTitles = ["Производитель", "Модель", "Материал", "Наличие"]
+	- var cellsValues = ["Элвин", "FX-327", "Миланский орех", "На складе"]
+	+gift_cells(cellsTitles, cellsValues, 3700)

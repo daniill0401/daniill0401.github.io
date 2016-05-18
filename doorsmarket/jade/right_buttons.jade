@@ -1,0 +1,32 @@
+.buttons_wrapper
+	.buttons_zamerchik
+		i.buttons_zamerchik_icon=""
+		h3="Вызвать замерщика"
+	.buttons_callback
+		i.buttons_callback_icon=""
+		h3="Заказать звонок"
+.zamer_wrap
+	.zamer_fon
+	.zamer_form
+		form(name="zamer_form", method="")
+			label
+				| Ваше имя
+				input.zamer_form_name(name="name", type="text")
+			label
+				| Ваш телефон
+				input.zamer_form_tel(name="tel", type="text")
+			input.zamer_form_submit(name="sended_zamer", type="submit", value="Отправить")
+			img(src="img/cross.png", width="40px").zamer_cross
+.callback_form_wrapper
+	.callback_form
+		h3.callback_title="Заполните поля ниже, и мы перезвоним Вам в течение 5 минут!"
+		form(name="callback_form", method="")
+			label
+				| Ваше имя
+				input.callback_form_name(name="name", type="text")
+			label
+				| Ваш телефон
+				input.callback_form_tel(name="tel", type="text")
+			input.callback_form_submit(name="sended_callback", type="submit", value="Отправить")
+			img(src="img/cross.png", width="40px").callback_cross
+	.callback_fon

@@ -1,0 +1,55 @@
+$height_header:86px;
+
+.wrapper-header
+    {
+    	&-fill {
+    		margin: 0 auto;
+    		height: $height_header;
+    		background-image: url(../img/back_header.png);
+    		background-repeat: repeat;
+    	transition: all ease-in-out .2s;
+    	}
+    }
+
+   .header {
+	   	&-nav{
+	   		&-link{
+	   			height: $height_header;
+	   			display: inline-block;
+	   			text-align: center;
+	   			padding: 0 10px 0 10px;
+	   			margin: 0 10px 0 10px;
+	   			float: right;
+	   			vertical-align: top;
+
+	   			a,p {
+	   				line-height: $height_header;
+	   				color: white;
+	   				font-size: 16px;
+	   				letter-spacing: .4px;
+	   				font-family: Roboto-regular;
+	   			}
+	   			a:hover {
+	   				color: rgba(166,0,0,.9);
+	   			}
+	   		}
+
+			&:last-child {
+				margin-right: 50px;
+			}
+   		}
+
+   		&-logo  {
+   			vertical-align: top;
+   			width: 400px;	
+   			display: inline-block;
+
+	   			&-desc{
+	   				font-size: 17px;
+	   				font-family: Roboto;
+	   				color: rgba(255,255,255,.8);
+	   				margin: -20px 0 0 40px;
+	   			}
+
+   		   	}
+   }

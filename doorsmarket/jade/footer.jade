@@ -1,0 +1,10 @@
+.footer_wrapper
+	- var arrayFooter = ["Как выбрать двери", "Как установить двери", "Связаться с нами"]
+	each val in arrayFooter
+		.footer_cell
+			p.footer_cell_value=val
+	- var socialIcons = new Array(5)
+	.footer_social_wrapper
+		each val, index in socialIcons
+			- var cls = "footer_social_"+(index+1)
+			.footer_social(class=cls)

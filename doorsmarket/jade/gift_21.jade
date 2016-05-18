@@ -1,0 +1,9 @@
+extends gift_layout
+block gift_title
+	| Муза, античный орех (глухая), Матадор
+block add_image
+	+add_image(20)
+block table_values
+	- var cellsTitles = ["Производитель", "Модель", "Материал", "Наличие"]
+	- var cellsValues = ["Матадор", "1ДГ1", "Античный орех", "На складе"]
+	+gift_cells(cellsTitles, cellsValues, 4800)

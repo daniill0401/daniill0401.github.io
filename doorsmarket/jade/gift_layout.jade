@@ -1,0 +1,17 @@
+extends layout
+block css
+	link(rel="stylesheet", 	href="css/gift_layout.css", type="text/css")
+block content
+	.gift_layout_wrapper
+		h2.gift_layout_title
+			block gift_title
+		block add_image
+		.gift_layout_description
+			block table_values
+			button.gift_layout_description_button="Добавить в корзину"
+		.gift_layout_right_round
+			.gift_layout_right_triangle
+		.gift_layout_left_round
+			.gift_layout_left_triangle
+block another_scripts
+	script(src="js/gift.js", type="text/javascript")
